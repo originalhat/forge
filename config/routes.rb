@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'builds#index'
   resources :builds
   resources :pipelines
   resources :organizations

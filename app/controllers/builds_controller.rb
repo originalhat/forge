@@ -12,11 +12,6 @@ class BuildsController < ApplicationController
   def show
   end
 
-  # GET /builds/new
-  def new
-    @build = Build.new
-  end
-
   # GET /builds/1/edit
   def edit
   end

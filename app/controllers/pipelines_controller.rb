@@ -12,11 +12,6 @@ class PipelinesController < ApplicationController
   def show
   end
 
-  # GET /pipelines/new
-  def new
-    @pipeline = Pipeline.new
-  end
-
   # GET /pipelines/1/edit
   def edit
   end
