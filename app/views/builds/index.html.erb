@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Builds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uuid</th>
+      <th>Message</th>
+      <th>Branch</th>
+      <th>State</th>
+      <th>Created at</th>
+      <th>Scheduled at</th>
+      <th>Started at</th>
+      <th>Finished at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @builds.each do |build| %>
+      <tr>
+        <td><%= build.uuid %></td>
+        <td><%= build.message %></td>
+        <td><%= build.branch %></td>
+        <td><%= build.state %></td>
+        <td><%= build.created_at %></td>
+        <td><%= build.scheduled_at %></td>
+        <td><%= build.started_at %></td>
+        <td><%= build.finished_at %></td>
+        <td><%= link_to 'Show', build %></td>
+        <td><%= link_to 'Edit', edit_build_path(build) %></td>
+        <td><%= link_to 'Destroy', build, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Build', new_build_path %>

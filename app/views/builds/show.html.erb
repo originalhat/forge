@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @build.uuid %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @build.message %>
+</p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @build.branch %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @build.state %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @build.created_at %>
+</p>
+
+<p>
+  <strong>Scheduled at:</strong>
+  <%= @build.scheduled_at %>
+</p>
+
+<p>
+  <strong>Started at:</strong>
+  <%= @build.started_at %>
+</p>
+
+<p>
+  <strong>Finished at:</strong>
+  <%= @build.finished_at %>
+</p>
+
+<%= link_to 'Edit', edit_build_path(@build) %> |
+<%= link_to 'Back', builds_path %>
